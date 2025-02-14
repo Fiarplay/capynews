@@ -1,0 +1,2 @@
+# capynews
+Berita terbaru capynews
