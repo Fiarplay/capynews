@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CapyNews - Portal Berita Terkini, Terpercaya, dan Terupdate">
+    <meta name="keywords" content="berita, berita terbaru, berita terkini, capynews, berita hari ini">
+    <meta name="author" content="CapyNews">
+    <title>CapyNews - Berita Terkini dan Terpercaya</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: #f4f4f4;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #333;
+            color: white;
+            padding: 15px 20px;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px;
+            background: #007bff;
+            color: white;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #ff9800;
+            color: white;
+            text-decoration: none;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        .news {
+            padding: 50px;
+            text-align: center;
+        }
+        .news-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .news-container article {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 30%;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .contact {
+            text-align: center;
+            padding: 50px;
+            background: #ddd;
+        }
+        form input, form textarea, form button {
+            display: block;
+            width: 80%;
+            margin: 10px auto;
+            padding: 10px;
+        }
+        footer {
+            text-align: center;
+            background: #222;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">CapyNews</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#news">Berita</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="hero">
+        <h1>Berita Terkini dan Terpercaya di CapyNews</h1>
+        <p>Ikuti perkembangan dunia dengan berita terbaru dari sumber terpercaya.</p>
+        <a href="#news" class="btn">Baca Berita</a>
+    </section>
+    
+    <section id="news" class="news">
+        <h2>Berita Terbaru</h2>
+        <div class="news-container">
+            <article>
+                <img src="news1.jpg" alt="Judul Berita 1">
+                <h3>Judul Berita 1</h3>
+                <p>Ringkasan berita terbaru yang menarik perhatian.</p>
+                <a href="#">Baca Selengkapnya</a>
+            </article>
+            <article>
+                <img src="news2.jpg" alt="Judul Berita 2">
+                <h3>Judul Berita 2</h3>
+                <p>Ringkasan berita lainnya yang informatif.</p>
+                <a href="#">Baca Selengkapnya</a>
+            </article>
+            <article>
+                <img src="news3.jpg" alt="Judul Berita 3">
+                <h3>Judul Berita 3</h3>
+                <p>Informasi menarik dan aktual untuk Anda.</p>
+                <a href="#">Baca Selengkapnya</a>
+            </article>
+        </div>
+    </section>
+    
+    <section id="about" class="about">
+        <h2>Tentang CapyNews</h2>
+        <p>CapyNews adalah portal berita terpercaya yang menyediakan informasi terkini dari berbagai bidang.</p>
+    </section>
+    
+    <section id="contact" class="contact">
+        <h2>Hubungi Kami</h2>
+        <form>
+            <input type="text" placeholder="Nama Anda" required>
+            <input type="email" placeholder="Email Anda" required>
+            <textarea placeholder="Pesan Anda" required></textarea>
+            <button type="submit">Kirim</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 CapyNews. Semua Hak Dilindungi.</p>
+    </footer>
+    
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Pesan Anda telah dikirim!');
+        });
+    </script>
+</body>
+</html>
